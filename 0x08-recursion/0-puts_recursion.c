@@ -1,6 +1,6 @@
 #include "main.h"
 
-/** 
+/**
  * _puts_recursion - is a function that prints a string
  *
  * @s: s is a pointer to an array

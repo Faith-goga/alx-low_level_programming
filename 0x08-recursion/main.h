@@ -1,7 +1,4 @@
 int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
 void _print_rev_recursion(char *s);
 int _strlen_recursion(char *s);
 int factorial(int n);

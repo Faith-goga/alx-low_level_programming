@@ -15,7 +15,7 @@ int square_root(int i, int j)
 	}
 	else if (i * i > j)
 	{
-		return (i);
+		return (-1);
 	}
 	else
 	{

@@ -42,7 +42,6 @@ char **strtow(char *str)
 		return (NULL);
 	}
 	i = 0;
-
 	while (*str)
 	{
 		while (*str == ' ' && *str)
@@ -82,5 +81,4 @@ char **strtow(char *str)
 	}
 	*(f + j) = NULL;
 	return (f);
-} 
-
+}

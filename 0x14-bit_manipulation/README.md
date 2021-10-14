@@ -1,2 +1,2 @@
-**General Knowledge**
--	How to manipulate bits and use bitwise operators
+# 0x14. C - Bit manipulation
+Bit manipulation exercise with c

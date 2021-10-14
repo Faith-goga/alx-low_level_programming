@@ -1,21 +1,39 @@
 #include "holberton.h"
+
 /**
- * set_bit - sets the value of a bit to 1 at a given index
- * @n: a string of 0 and 1 chars
- * @index: index of the bit you want to get
- *
- * Return: 1 if it worked or -1 if an error ocurred
+ * powX- powers a number b to the p's power
+ * @b: base
+ * @p: power
+ * Return: return b to the power of a
+ */
+unsigned long int powX(int b, int p)
+{
+	unsigned long int ans = 1;
+
+	while (p)
+	{
+		ans *= b;
+		p--;
+	}
+	return (ans);
+}
+
+/**
+ * set_bit - prints the binary representation of a number
+ * @n: input integer
+ * @index: returns the value of a bit at a given index
+ * Return: 1 for ssucess -1 for failure
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-if (index > 64)
-{
-return (-1);
-}
-else
-{
-*n = *n | 1 << index;
-return (1);
-}
-}
+	unsigned long int test;
 
+	if (index > sizeof(n) * BIT_SIZE - 1)
+		return (-1);
+
+
+	test = powX(2, index);
+	*n = *n | test;
+	return (1);
+
+}
